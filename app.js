@@ -29,3 +29,21 @@ if (isLoggedIn === true) {
 } else {
   console.log('Du måste logga in först')
 }
+
+
+const trafficLight = 'röd';
+
+switch (trafficLight) {
+  case 'grön': 
+    console.log('Kör!') 
+    break
+  case 'gul': 
+    console.log('Gör dig redo')
+    break
+  case'röd':
+    console.log('Stanna!')
+    break
+
+  default: 
+    console.log('Okänd signal')
+}
