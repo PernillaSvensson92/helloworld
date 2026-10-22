@@ -94,4 +94,25 @@ while (energi > 0) {
   console.log('Sprang ett varv! Energi kvar' + energi)
   energi--
 }
-console.log('Slut på energi! Måste vila')
+console.log('Slut på energi! Måste vila') 
+
+// Array med student-objekt
+
+const elever = [
+  { namn: 'Anna', poang: 85},
+  { namn: 'Erik', poang: 92},
+  { namn: 'Sara', poang: 78}
+]
+
+// for loop med i
+for (let i = 0; i < elever.length; i++) {
+  console.log(elever[i].namn + ' fick ' + elever[i].poang + ' poäng!')
+}
+
+// Nya sättet att skriva foor-loop på när det är objekt i en Array. ofta vill man använda
+//  med i ändå föR att kunna komma åt en specifik plats i min array och eventuellt 
+// köra en if sats
+for (const elev of elever) {
+  console.log(elev.namn + ' fick ' + elev.poang + ' poäng!')
+} 
+
