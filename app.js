@@ -1,18 +1,21 @@
 let person = [
   {id:1, age: 16, hasTicket: true, withAdult: true,},
-  {id:2, age:12, hasTicket: true, withAdult: false,},
+  {id:2, age: 12, hasTicket: true, withAdult: true,},
+  {id:3, age: 13, hasTicket: true, withAdult: false,}
 ]
 
 let age = 14
 let hasTicket = true
 
-
-if (person[1].age >=15 && hasTicket === true) {
-  console.log("välkommen in i BIO")
+if (person[2].hasTicket === true) {
+  if (person[2].age >=15 || person[2].withAdult == true) {
+    console.log("välkommen in i BIO")
+  } else {
+    console.log('Du är för ung och behöver en vuxen med dig')
+  }
 } else {
-  console.log('gå och köp ticket')
+  console.log('köp biljett försst')
 }
-
 
 const isLoggedIn = true;
 const userRole = 'admin';
