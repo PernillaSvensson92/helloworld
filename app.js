@@ -121,9 +121,21 @@ for (const elev of elever) {
 
 for ( let i = 5; i >= 1 ; i--) {
   if (i === 3) {
-    console.log('3 - Halvvägs kvar!')
+    console.log(i + '- Halvvägs kvar!')
   } else {
     console.log('Sekunder kvar:' + i)
   }
 }
-console.log('LITOFF!')
+console.log('LIFTOFF!')
+
+// Inköpskollan med Array
+
+const cart = ['Mjölk', 'Godis', 'Bröd', 'Godis', 'Äpple']
+
+for (vara of cart) {
+  if (vara === 'Godis') {
+    console.log('⚠️ Varning: Onödig vara!')
+  } else {
+    console.log('köp: ' + vara)
+  }
+}
